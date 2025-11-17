@@ -1,13 +1,16 @@
-import { useState } from 'react'
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 import './App.css'
+import { Ejercicio1 } from "./Componentes/Ejecicio1/Ejercicio1";
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-     
-    </>
+    <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Ejercicio1 mensaje="my friend" />} />
+    </Routes>
+    </BrowserRouter>
   )
 }
 
